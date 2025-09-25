@@ -33,6 +33,14 @@ const skillCategories = ref([
     ]
   },
   {
+    name: 'Prgm Languages',
+    skills: [
+      { name: 'Python', level: 100 },
+      { name: 'Java', level: 100 },
+      { name: 'C++', level: 100 }
+    ]
+  },
+  {
     name: 'Backend',
     skills: [
       { name: 'MySQL', level: 100 },
@@ -42,8 +50,7 @@ const skillCategories = ref([
     name: 'Other',
     skills: [
       { name: 'Docker', level: 100 },
-      { name: 'Java', level: 100 },
-      { name: 'C++', level: 100 }
+      { name: 'Git', level: 100 },
     ]
   }
 ]);

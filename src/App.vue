@@ -4,6 +4,7 @@
     <main>
       <About />
       <Skills />
+      <Experience />
       <Projects />
     </main>
     <Footer />
@@ -14,6 +15,7 @@
 import Header from './components/vue-header.vue'
 import About from './components/vue-about.vue'
 import Projects from './components/vue-projects.vue'
+import Experience from './components/vue-experience.vue'
 import Skills from './components/vue-skills.vue'
 import Footer from './components/vue-footer.vue'
 </script>
