@@ -6,7 +6,7 @@
       </div>
       <div class="about-content">
         <h2>About</h2>
-        <p>Offering wealth of experience in technical troubleshooting and problem-solving business issues. Hardworking, educated and willing to go the extra mile to complete any task. Skilled programming in different languages such as Python & Java to develop applications.
+        <p>Detail-oriented developer with experience in full-stack applications and AI-powered chatbot systems. Skilled in Python, Java, and API integration. Adept at building scalable solutions and enhancing user experience through automation and optimization
         </p>
       </div>
     </div>
