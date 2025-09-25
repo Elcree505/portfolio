@@ -22,6 +22,14 @@ import { ref, onMounted } from 'vue';
 import { useIntersectionObserver } from '@vueuse/core';
 
 const skillCategories = ref([
+   {
+    name: 'Prgm Languages',
+    skills: [
+      { name: 'Python', level: 100 },
+      { name: 'Java', level: 100 },
+      { name: 'C++', level: 100 }
+    ]
+  },
   {
     name: 'Frontend',
     skills: [
@@ -30,14 +38,6 @@ const skillCategories = ref([
       { name: 'CSS', level: 100 },
       { name: 'JavaScript', level: 100 },
       { name: 'Bootstrap', level: 100 }
-    ]
-  },
-  {
-    name: 'Prgm Languages',
-    skills: [
-      { name: 'Python', level: 100 },
-      { name: 'Java', level: 100 },
-      { name: 'C++', level: 100 }
     ]
   },
   {
