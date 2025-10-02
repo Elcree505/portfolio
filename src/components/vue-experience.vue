@@ -16,7 +16,7 @@ import { useIntersectionObserver } from '@vueuse/core';
 
 const experiences = ref([
   { id: 1, title: 'Software Engineer 03/2024 - 09/2024', description: 'Allow users to manage tasks efficiently with features like inline editing, task ordering, and timestamp tracking. The project serves as a practical example of DOM manipulation with JavaScript, responsive web design using Bootstrap, and the deployment of static web projects. ',},
-  { id: 2, title: 'Software Engineer 07/2025 - 8/2025', description: 'Designed and implemented an AI-powered chatbot that enables customers to seamlessly book car services through natural language conversation.'}
+  { id: 2, title: 'Software Engineer 07/2025 - 08/2025', description: 'Designed and implemented an AI-powered chatbot that enables customers to seamlessly book car services through natural language conversation.'}
 ]);
 
 onMounted(() => {
