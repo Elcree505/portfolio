@@ -4,6 +4,7 @@
     <nav>
       <a href="#about" @click="scrollToSection">About</a>
       <a href="#skills" @click="scrollToSection">Skills</a>
+      <a href="#experiences" @click="scrollToSection">Experiences</a>
       <a href="#projects" @click="scrollToSection">Projects</a>
     </nav>
   </header>
