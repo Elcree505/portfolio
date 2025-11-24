@@ -33,30 +33,28 @@ const skillCategories = ref([
     ]
   },
   {
-    name: 'Other',
+    name: 'Frameworks/Tools',
     skills: [
       { name: 'Pytorch', level: 100 },
       { name: 'Docker', level: 100 },
-      { name: 'Git', level: 100 },
+      { name: 'GitHub', level: 100 },
       { name: 'Rasa', level: 100 }
     ]
   },
   {
-    name: 'Frontend',
+    name: 'Web Development',
     skills: [
       { name: 'Vue.js', level: 100 },
       { name: 'HTML', level: 100 },
       { name: 'CSS', level: 100 },
       { name: 'JavaScript', level: 100 },
-      { name: 'Bootstrap', level: 100 }
+      { name: 'Bootstrap', level: 100 },
+      { name: 'Flask', level: 100 },
+      { name: 'Rest', level: 100 },
+      { name: 'React', level: 100 },
+      { name: 'MySQL', level: 100 }
     ]
   },
-  {
-    name: 'Backend',
-    skills: [
-      { name: 'MySQL', level: 100 },
-    ]
-  }
 ]);
 
 const skillLevels = ref([]);
