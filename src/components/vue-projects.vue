@@ -36,9 +36,25 @@ import { ref, onMounted, computed } from 'vue';
 import { useIntersectionObserver } from '@vueuse/core';
 
 const projects = ref([
-  // 2024 projects (your existing two)
+  // 2025 project (add your new one here)
   {
     id: 1,
+    year: 2025,
+    title: 'Business Meeting Text Analysis',
+    description:
+      'Developed an end-to-end NLP pipeline for business meeting analysis, transforming unstructured meeting transcripts into structured representations through text cleaning, tokenization, keyword extraction, and semantic clustering.',
+  },
+  {
+    id: 2,
+    year: 2025,
+    title: 'CIFAR10',
+    description:
+      'Trains a simple Convolutional Neural Network (CNN) on the CIFAR-10 dataset using PyTorch. It first computes the dataset’s mean and standard deviation for normalization, then loads and preprocesses the images. The model, trained with Adam optimizer and cross-entropy loss over several epochs, learns to classify 32×32 color images into 10 object categories such as airplane, cat, and truck.',
+    link: 'https://github.com/Elcree505/cifar10_simple_cnn' // replace with your real link
+  },
+  // 2024 projects (your existing two)
+  {
+    id: 3,
     year: 2024,
     title: 'Todo-List',
     description:
@@ -46,39 +62,33 @@ const projects = ref([
     link: 'https://elcree505.github.io/Todo-List/'
   },
   {
-    id: 2,
+    id: 4,
     year: 2024,
     title: 'Anime Search',
     description:
       'Allow users to search for the anime they are looking for, they can click into the description for more detail about the anime. The project serves as a practical example of Vue project effectivelly using composition API, event handling, and other types of API/functions in Vue JS.',
     link: 'https://elcree505.github.io/animeSearch/'
-  },
-
-  // 2025 project (add your new one here)
-  {
-    id: 3,
-    year: 2025,
-    title: 'CIFAR10',
-    description:
-      'trains a simple Convolutional Neural Network (CNN) on the CIFAR-10 dataset using PyTorch. It first computes the dataset’s mean and standard deviation for normalization, then loads and preprocesses the images. The model, trained with Adam optimizer and cross-entropy loss over several epochs, learns to classify 32×32 color images into 10 object categories such as airplane, cat, and truck.',
-    link: 'https://github.com/Elcree505/cifar10_simple_cnn' // replace with your real link
   }
 ])
 
 // Group projects by year and sort years desc (2025, 2024, …)
 const groupedByYear = computed(() => {
+  // 1️⃣ sort projects by year (newest year first)
+  const sorted = [...projects.value].sort(
+    (a, b) => b.year - a.year
+  )
+
+  // 2️⃣ group by year (order preserved)
   const map = new Map()
-  for (const p of projects.value) {
+  for (const p of sorted) {
     if (!map.has(p.year)) map.set(p.year, [])
     map.get(p.year).push(p)
   }
-  // Optional: sort projects within each year (e.g., newest first by id)
-  for (const arr of map.values()) arr.sort((a, b) => b.id - a.id)
 
-  return Array.from(map, ([year, items]) => ({ year, items })).sort(
-    (a, b) => a.year - b.year
-  )
+  // 3️⃣ return grouped result (already in correct order)
+  return Array.from(map, ([year, items]) => ({ year, items }))
 })
+
 
 onMounted(() => {
   const targets = document.querySelectorAll('#projects .fade-in');

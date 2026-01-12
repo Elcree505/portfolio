@@ -15,8 +15,8 @@ import { ref, onMounted } from 'vue';
 import { useIntersectionObserver } from '@vueuse/core';
 
 const experiences = ref([
-  { id: 1, title: 'Software Engineer 03/2024 - 09/2024', description: 'Develop a digital platform to streamline the group buying process managed by company employees. This platform will support the entire lifecycle of group purchases from initiation to distribution.',},
-  { id: 2, title: 'Software Engineer 07/2025 - 08/2025', description: 'Designed and implemented an AI-powered chatbot that enables customers to seamlessly book car services through natural language conversation.'}
+  { id: 1, title: 'Software Engineer 07/2025 - 08/2025', description: 'Designed and implemented an AI-powered chatbot that enables customers to seamlessly book car services through natural language conversation.'},
+  { id: 2, title: 'Software Engineer 03/2024 - 09/2024', description: 'Develop a digital platform to streamline the group buying process managed by company employees. This platform will support the entire lifecycle of group purchases from initiation to distribution.',}
 ]);
 
 onMounted(() => {

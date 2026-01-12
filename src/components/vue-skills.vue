@@ -22,40 +22,60 @@ import { ref, onMounted } from 'vue';
 import { useIntersectionObserver } from '@vueuse/core';
 
 const skillCategories = ref([
-   {
-    name: 'Prgm Languages',
+  {
+    name: 'Programming Languages',
     skills: [
       { name: 'Python', level: 100 },
       { name: 'Java', level: 100 },
       { name: 'C++', level: 100 },
       { name: 'C#', level: 100 },
+      { name: 'JavaScript', level: 100 },
+      { name: 'HTML', level: 100 },
+      { name: 'CSS', level: 100 },
+      { name: 'R', level: 100 },
       { name: 'MATLAB', level: 100 }
     ]
   },
   {
-    name: 'Frameworks/Tools',
+    name: 'Frameworks & Libraries',
     skills: [
-      { name: 'Pytorch', level: 100 },
-      { name: 'Docker', level: 100 },
-      { name: 'GitHub', level: 100 },
-      { name: 'Rasa', level: 100 }
+      { name: 'Vue.js', level: 100 },
+      { name: 'React.js', level: 100 },
+      { name: 'Flask', level: 100 },
+      { name: 'FastAPI', level: 100 },
+      { name: 'Rasa', level: 100 },
+      { name: 'Bootstrap', level: 100 },
+      { name: 'PyTorch', level: 100 },
+      { name: 'pandas', level: 100 },
+      { name: 'NumPy', level: 100 },
+      { name: 'Matplotlib', level: 100 }
     ]
   },
   {
-    name: 'Web Development',
+    name: 'Web & Backend Development',
     skills: [
-      { name: 'Vue.js', level: 100 },
-      { name: 'HTML', level: 100 },
-      { name: 'CSS', level: 100 },
-      { name: 'JavaScript', level: 100 },
-      { name: 'Bootstrap', level: 100 },
-      { name: 'Flask', level: 100 },
-      { name: 'Rest', level: 100 },
-      { name: 'React', level: 100 },
-      { name: 'MySQL', level: 100 }
+      { name: 'REST APIs', level: 100 },
+      { name: 'MySQL', level: 100 },
+      { name: 'SQLAlchemy', level: 100 }
     ]
   },
+  {
+    name: 'Developer Tools & Platforms',
+    skills: [
+      { name: 'Git', level: 100 },
+      { name: 'GitHub', level: 100 },
+      { name: 'Docker', level: 100 },
+      { name: 'Linux', level: 100 },
+      { name: 'VS Code', level: 100 },
+      { name: 'Visual Studio', level: 100 },
+      { name: 'Jupyter Notebook', level: 100 },
+      { name: 'Eclipse', level: 100 },
+      { name: 'Unity', level: 100 }
+    ]
+  }
 ]);
+
+
 
 const skillLevels = ref([]);
 
