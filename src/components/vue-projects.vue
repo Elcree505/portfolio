@@ -43,6 +43,7 @@ const projects = ref([
     title: 'Business Meeting Text Analysis',
     description:
       'Developed an end-to-end NLP pipeline for business meeting analysis, transforming unstructured meeting transcripts into structured representations through text cleaning, tokenization, keyword extraction, and semantic clustering.',
+    link: 'https://github.com/Elcree505/Business-Text-Analysis'
   },
   {
     id: 2,
