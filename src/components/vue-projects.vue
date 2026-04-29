@@ -36,9 +36,39 @@ import { ref, onMounted, computed } from 'vue';
 import { useIntersectionObserver } from '@vueuse/core';
 
 const projects = ref([
-  // 2025 project (add your new one here)
   {
     id: 1,
+    year: '2026 (Ongoing)',
+    title: 'RAG Pipiline with Hybrid Search Over Internal Docs',
+    description:
+      'Built a production-grade Retrieval-Augmented Generation (RAG) system that ingests and indexes internal documentation using hybrid dense vector and sparse BM25 keyword search. Implemented Reciprocal Rank Fusion to combine retrieval signals and a cross-encoder reranker to improve precision before generation. Designed a grounded generation pipeline using GPT-4o/Claude Sonnet with inline source citations, citation verification via LLM-as-judge, and confidence scoring across retrieval quality, citation coverage, and answer completeness. Exposed the system through a FastAPI service with a query dashboard for comparing retrieval strategies, containerized via Docker Compose for reproducible deployment.',
+  },
+  {
+    id: 2,
+    year: '2026 (Ongoing)',
+    title: 'Bail Out Burglary',
+    description:
+      '  Collaborated on a 3D single/multiplayer heist game, engineering enemy AI systems for three distinct enemy types using state machine architectures. Implemented NavMeshAgent pathfinding, raycast detection cones, and proximity-based triggers to drive real-time movement and player targeting. Developed core gameplay mechanics including a physics-based taser wire system with weapon immunity filtering and Rigidbody-driven projectile launching. Managed Git/GitHub workflows with feature branching to coordinate contributions across the development team.',
+  },
+  {
+    id: 3,
+    year: 2026,
+    title: 'Destiny Defender',
+    description:
+      'Developed a 2D top-down defense game in Unity (C#) where a player defends a central position against directional enemy encounters using a shield-blocking mechanic. Enemies spawn from four cardinal directions with pre-visualized attack sequences — spawn points flash in order before enemies arrive, giving the player reaction cues. The player must rotate their shield to match incoming enemy directions to block damage, while a wave-based spawner progressively generates randomized enemy sequences with configurable timing between spawns and waves.',
+    link: 'https://github.com/Nappers1/OnTheHorizon---Fiat-Ludum-/tree/main'
+    },
+  // 2025 project (add your new one here)
+  {
+    id: 4,
+    year: 2025,
+    title: 'Spotify User Churn Prediction & Segmentation Study',
+    description:
+      'Built and refined a structured machine learning pipeline to analyze customer churn in a large behavioral dataset, including feature engineering, one-hot encoding, normalization, and model evaluation. Conducted controlled experiments comparing K-Means clustering and logistic regression, using diagnostic metrics and error analysis to determine that clustering was primarily driven by subscription-type variables rather than engagement behavior, then adjusted the modeling strategy accordingly.',
+    link: 'https://docs.google.com/document/d/1JVEDRAJD4I814pXBgYvjS4R2apfPiUfEcSx4gQz4XMI/edit?tab=t.0#heading=h.tofg2r25ijew'
+  },
+  {
+    id: 5,
     year: 2025,
     title: 'Business Meeting Text Analysis',
     description:
@@ -46,7 +76,7 @@ const projects = ref([
     link: 'https://github.com/Elcree505/Business-Text-Analysis'
   },
   {
-    id: 2,
+    id: 6,
     year: 2025,
     title: 'CIFAR10',
     description:
@@ -55,7 +85,7 @@ const projects = ref([
   },
   // 2024 projects (your existing two)
   {
-    id: 3,
+    id: 7,
     year: 2024,
     title: 'Todo-List',
     description:
@@ -63,7 +93,7 @@ const projects = ref([
     link: 'https://elcree505.github.io/Todo-List/'
   },
   {
-    id: 4,
+    id: 8,
     year: 2024,
     title: 'Anime Search',
     description:
